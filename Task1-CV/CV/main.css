@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #A9BCD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+}
+
+.container{
+    background: #fff;
+    display: grid;
+    position: relative;
+    margin: 40px;
+    width: 100%;
+    max-width: 1000px; /*100%*/
+    min-height: 1000px;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.leftSide{
+    background:#160C28;
+    color: #EFCB68;
+    display: flex;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.briefDescription{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #AEB7B3;
+}
+
+.profilePic_img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.briefDescription h2{
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.4em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #AEB7B3;
+}
+
+.briefDescription span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1em;
+    color: #AEB7B3;
+}
+
+.titleLeft{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.profile p{
+    color:#AEB7B3;
+    text-align: left;
+    font-weight: 500;
+    /* font-size: 15px; */
+}
+
+.languages .nameLang{
+    color:#EFCB68;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.languages td{
+    color:#AEB7B3;
+    text-align: center;
+    font-weight: 500;
+    /* font-size: 15px; */
+}
+
+.education li{
+    color: #AEB7B3;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 15px;
+    line-height: 1.5em;
+}
+
+.education span{
+    color: #EFCB68;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.hobbies ul{
+    color: #AEB7B3;
+    text-align: center;
+    font-weight: 500;
+}
+
+.otherInfo table{
+    margin: 15px;
+    border-color: #EFCB68;
+}
+
+.otherInfo td{
+    color: #AEB7B3;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.rightSide{
+    background: #fff;
+    color: #373F51;
+    position: relative;
+    padding: 40px;
+    font-size: 15px;
+}
+
+.titleRight{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 2px solid rgba(27, 27, 27, 0.849);
+}
+
+.portfolio h4{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.portfolio span{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    text-transform: uppercase;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+}
+
+.portfolio img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    size: auto;
+}
+
+.portfolio .row{
+    display: flex;
+}
+
+.portfolio .column{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.skills h4{
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.skills td{
+    border: 1px solid #EFCB68;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #EFCB68;
+    border-radius: 5%;
+    font-weight: 500;
+}
+
+.skills h5{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #EFCB68;
+}
