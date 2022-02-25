@@ -53,12 +53,145 @@
         body{
             /* background-color: #f9f6ee; */
             line-height: 1;
+            background-color: #EAE0D5;
+            font-family: 'Poppins', sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 960px;
+        }
+        
+        header{
+            margin-top: 40px;
         }
 
-        header h1{
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 26px;
+        header p{
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            max-width: 80%;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            color:#0A0908;
+        }
+
+        h1{
+            color: #0A0908;
+            font-weight: 600;
+            font-size: 36px;
+            text-align: center;
+            max-width: 80%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #030303;
+        }
+        
+        header span{
+            font-weight: 300;
+            font-size: 24px;
+        }
+
+
+        h2{
+            font-weight: 600;
+            font-size: 28px;
+            max-width: 80%;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #030303;
+        }
+
+        h3{
+            font-weight: 400;
+            font-size: 20px;
+            max-width: 80%;
+            margin: auto;
+            padding-bottom: 10px;
+        }
+
+        h4{
+            font-weight: 400;
+            font-size: 14px;
+            max-width: 80%;
+            margin: auto;
+            padding-bottom: 10px;
+        }
+
+        p{
+            color: #0A0908;
+            font-weight: 300;
+            font-size: 18px;
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        #education{
+            margin: auto;
+        }
+        
+        #education h3{
+            font-family: 'Raleway',sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding-bottom: 0px;
+        }
+
+        #education span{
+            font-size: 14px;
+            font-weight: 800;
+            color: #03045E;
+        }
+
+        #education p{
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+
+        #soft-skills table{
+            max-width: 80%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        #soft-skills td{
+            border: 0.5px solid #EAE0D5;
+            padding: 0.5em;
+            text-align: center;
+            background-color: #03045E;
+            border-radius: 10%;
+            font-weight: 500;
+            font-size: 14px;
+            color: #EAE0D5;
+        }
+
+        #technical-skills .box{
+            position: relative;
+            width: 80%;
+            display: grid;
+            grid-template-columns: 150px 2fr;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        
+        #technical-skills .box .percent{
+            position: relative;
+            width: 100%;
+            height: 10px;
+            height: 10px;
+            background: #f0f0f0;
+        }
+        
+        #technical-skills .box .percent div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #03045E;
         }
 
 
