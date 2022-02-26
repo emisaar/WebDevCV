@@ -65,16 +65,7 @@
         }
 
         header p{
-            font-family: 'Raleway', sans-serif;
             text-align: center;
-            max-width: 80%;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1.2;
-            letter-spacing: 0.5px;
-            padding-top: 20px;
-            padding-bottom: 10px;
-            color:#0A0908;
         }
 
         h1{
@@ -85,7 +76,7 @@
             max-width: 80%;
             margin: 0 auto;
             padding-bottom: 10px;
-            border-bottom: 2px solid #030303;
+            border-bottom: 4px solid #030303;
         }
         
         header span{
@@ -99,16 +90,19 @@
             font-size: 28px;
             max-width: 80%;
             margin: auto;
+            margin-bottom: 15px;
             padding-top: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #030303;
+            border-bottom: 4px solid #030303;
         }
 
         h3{
             font-weight: 400;
             font-size: 20px;
             max-width: 80%;
-            margin: auto;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
             padding-bottom: 10px;
         }
 
@@ -121,40 +115,38 @@
         }
 
         p{
-            color: #0A0908;
-            font-weight: 300;
-            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
             max-width: 80%;
-            margin: 0 auto;
-            padding: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+            padding-top: 20px;
+            color:#0A0908;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #education{
-            margin: auto;
+            margin-top: auto;
         }
         
         #education h3{
             font-family: 'Raleway',sans-serif;
             font-size: 16px;
-            font-weight: 600;
-            padding-bottom: 0px;
+            font-weight: 500;
+            margin-top: 10px;
         }
 
         #education span{
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 800;
             color: #03045E;
-        }
-
-        #education p{
-            padding-bottom: 10px;
-            font-size: 14px;
         }
 
         #soft-skills table{
             max-width: 80%;
             margin: auto;
-            margin-bottom: 20px;
         }
 
         #soft-skills td{
@@ -166,6 +158,28 @@
             font-weight: 500;
             font-size: 14px;
             color: #EAE0D5;
+        }
+
+        .scroll {
+            overflow-x: scroll;
+            height: 60px;
+            max-width: 80%;
+            margin: auto; 
+            padding: 5px;
+            text-align: justify;
+        }
+        .scroll::-webkit-scrollbar {
+            height:6px;
+        }
+
+        .scroll::-webkit-scrollbar-track {
+            -webkit-box-shadow:inset 0 0 8px #f0f0f0; 
+            border-radius:5px;
+        }
+
+        .scroll::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 8px red; 
+            border-radius:5px;
         }
 
         #technical-skills .box{
@@ -194,4 +208,106 @@
             background: #03045E;
         }
 
+        #portfolio p{
+            margin-top: -20px;
+            margin-bottom: 15px;
+        }
 
+        #portfolio img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+            border-radius: 2%;
+        }
+
+        #portfolio h3{
+            font-weight: 500;
+        }
+
+        #portfolio span{
+            font-weight: 800;
+            font-size: 16px;
+            color:#03045E
+        }
+        
+        #portfolio .row{
+            display: flex;
+            margin: auto;
+        }
+        
+        #portfolio .column{
+            flex:50%;
+        }
+
+        #hobbies-languages .column h2{
+            text-align: left;
+        }
+
+        #hobbies-languages .column h4{
+            font-weight: 600;
+            padding-top: 7px;
+        }
+
+        #hobbies-languages .row{
+            display: flex;
+            margin: auto;
+            max-width: 90%;
+        }
+        
+        #hobbies-languages .column{
+            flex:50%;
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        #hobbies-languages .box{
+            position: relative;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        
+        #hobbies-languages .box .percent{
+            position: relative;
+            width: 100%;
+            height: 10px;
+            height: 10px;
+            background: #f0f0f0;
+        }
+        
+        #hobbies-languages .box .percent div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #03045E;
+        }
+
+        #favorites .favorite-item h3{
+            color:#03045E;
+            font-weight: 600;
+        }
+        
+        #favorites .favorite-item table{
+            /* border-collapse: collapse; */
+            max-width: 90%;
+            margin: auto;
+            border: 2px solid #03045E;
+        }
+
+        #favorites .favorite-item th{
+            padding: 8px;
+            text-align: left;
+            font-weight: 800;
+            background-color: #03045E;
+            color: #EAE0D5;
+        }
+
+        #favorites .favorite-item td{
+            padding: 8px;
+            font-weight: 16px;
+        }
