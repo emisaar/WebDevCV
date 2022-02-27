@@ -60,9 +60,6 @@
             max-width: 960px;
         }
         
-        header{
-            margin-top: 40px;
-        }
 
         header p{
             text-align: center;
@@ -125,6 +122,102 @@
             color:#0A0908;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        nav{
+            background-color: #212121;
+            height: 40px;
+            width: 100%;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        nav ul{
+            margin-left: 40px;
+            margin-right: auto;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        nav ul li{
+            display: inline-block;
+            line-height: 40px;
+            margin: 0 5px;
+        }
+        
+        nav ul li a{
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10%;
+            padding: 7px 13px;
+        }
+
+        nav a:hover{
+            background-color: red;
+            transition: 0.5s ease-out;
+            text-decoration: none;
+            background-size: 20px;
+        }
+
+        .checkbutton{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 40px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check{
+            display: none;
+        }
+        
+        @media (max-width: 952px){
+            .checkbutton{
+                display: block;
+            }
+
+            nav ul{
+                position: fixed;
+                width: 80%;
+                height: 40vh;
+                background-color: #212121;
+                text-align: center;
+                top: -100%;
+                transition: all .5s;
+            }
+
+            nav ul li{
+                display: block;
+                line-height: 30px;
+            }
+
+            nav ul li a{
+                font-size: 20px;
+            }
+
+            #check:hover ~ ul{
+                top: 40px;
+            }
+
+            /* #check:checked ~ ul{
+                top: 40px;
+            } */
+            
+
+        }
+
+        #profile-description img{
+            max-width: 30%;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+
         }
 
         #education{
@@ -223,6 +316,7 @@
 
         #portfolio h3{
             font-weight: 500;
+            margin-top: 20px;
         }
 
         #portfolio span{
@@ -310,4 +404,30 @@
         #favorites .favorite-item td{
             padding: 8px;
             font-weight: 16px;
+        }
+
+        #contact-info table{
+            max-width: 80%;
+            margin: auto;
+        }
+
+        #contact-info td{
+            border: 10px solid #EAE0D5;
+            padding: 1em;
+            margin: 1em;
+            text-align: center;
+            background-color: #303036;
+            border-radius: 30%;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        #contact-info td:hover{
+            background-color: red;
+            transition: 0.3s ease-out;
+        }
+
+        #contact-info a{
+            color: #EAE0D5;
+            text-decoration: none;
         }
