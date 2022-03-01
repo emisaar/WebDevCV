@@ -7,39 +7,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="https://kit.fontawesome.com/a076dd5399.js"></script>
+        <link href="C:\Users\emisa\OneDrive\Documentos\GitHub\TC2005B-Software-Development\Task1\main.css" rel="stylesheet">
+        <link href="js\splide.min.js" rel="stylesheet">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
         </style>
-        <link href="C:\Users\emisa\OneDrive\Documentos\GitHub\TC2005B-Software-Development\Task1\main.css" rel="stylesheet">
     </head>
     <body>
         <!--Basic Identity-->
         <header>
             <nav>
-                <ul>
+                <ul id="main-menu">
                     <li><a class="menu-element" href="#profile-description">About Me</a></li>
                     <li><a class="menu-element" href="#education">Education</a></li>
                     <li><a class="menu-element" href="#skills">Skills</a></li>
                     <li><a class="menu-element" href="#portfolio">Portfolio</a></li>
                     <li><a class="menu-element" href="#hobbies-languages">Hobbies</a></li>
                     <li><a class="menu-element" href="#favorites">Favorites</a></li>
-                    <li><a class="menu-element" href="#contact-info">Contact Info</a></td>
-                    <li id="menu-icon"><i class="material-icons">menu</i>
-                        <div id="short-menu">
-                            <ul>
-                                <li><a href="#profile-description">About Me</a></li>
-                                <li><a href="#education">Education</a></li>
-                                <li><a href="#skills">Skills</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#hobbies-languages">Hobbies</a></li>
-                                <li><a href="#favorites">Favorites</a></li>
-                                <li><a href="#contact-info">Contact Info</a></td>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                    <li><a class="menu-element" href="#contact-info">Contact Info</a></li>
+                    <!-- <li id="menu-icon"><i class="material-icons">menu</i></li> -->
+                    </ul>
+                <i class="material-icons" id="menu-icon">menu</i>
+                <div id="short-menu">
+                    <ul class="menu">
+                        <li id="about-me"><a href="#profile-description">About Me</a></li>
+                        <li id="educ-el"><a href="#education">Education</a></li>
+                        <li id="skills-el"><a href="#skills">Skills</a></li>
+                        <li id="port-el"><a href="#portfolio">Portfolio</a></li>
+                        <li id="hob-el"><a href="#hobbies-languages">Hobbies</a></li>
+                        <li id="fav-el"><a href="#favorites">Favorites</a></li>
+                        <li id="cont-el"><a href="#contact-info">Contact Info</a></td>
+                    </ul>
+                </div>
             </nav>
+
             <div id="profile-description">
                 <h1>Emiliano Saucedo Arriola<br><span>Software Engineering</span></h1>
                 <img src="C:\Users\emisa\OneDrive\Documentos\GitHub\TC2005B-Software-Development\Task1\img\profilePicture.jpg" alt="profile-picture">
@@ -313,5 +314,50 @@
                 </table>
             </div>
         </footer>
+
+        <script>
+            // Open menu by icon
+            let menu = document.getElementById('menu-icon')
+            menu.addEventListener('click', openMenu)
+    
+            function openMenu(){
+                let menu = document.getElementById('short-menu')
+                menu.classList.toggle('visible')
+            }
+
+            // Close menu by typing about me
+            let aboutElement = document.getElementById('about-me')
+            aboutElement.addEventListener('click', closeMenu)
+
+            // Close menu by typing education
+            let educElement = document.getElementById('educ-el')
+            educElement.addEventListener('click', closeMenu)
+
+            // Close menu by typing skills
+            let skillsElement = document.getElementById('skills-el')
+            skillsElement.addEventListener('click', closeMenu)
+
+            // Close menu by typing portfolio
+            let portElement = document.getElementById('port-el')
+            portElement.addEventListener('click', closeMenu)
+
+            // Close menu by typing hobbies
+            let hobElement = document.getElementById('hob-el')
+            hobElement.addEventListener('click', closeMenu)
+
+            // Close menu by typing favorites
+            let favElement = document.getElementById('fav-el')
+            favElement.addEventListener('click', closeMenu)
+
+            // Close menu by typing contact info
+            let contElement = document.getElementById('cont-el')
+            contElement.addEventListener('click', closeMenu)
+    
+            function closeMenu(){
+                let menu = document.getElementById('short-menu')
+                menu.classList.toggle('visible')
+            }
+        </script>
+
     </body>
 </html>
