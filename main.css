@@ -184,7 +184,7 @@
             position: fixed;
             right: 0;
             top: 40px;
-            width: 320px;
+            width: 100%;
             background-color: #212121;
             z-index: 1000;
             height: 100vh;
