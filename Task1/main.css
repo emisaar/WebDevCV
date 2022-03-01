@@ -198,10 +198,6 @@
                 transform: translateX(0);
             }
 
-            /* #short-menu.hide{
-                display: none;
-            } */
-
             ul.menu{
                 list-style-type: none;
                 margin: 0;
