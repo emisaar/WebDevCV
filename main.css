@@ -52,7 +52,7 @@
         
         body{
             /* background-color: #f9f6ee; */
-            line-height: 1;
+            line-height: 1.5;
             background-color: #EAE0D5;
             font-family: 'Poppins', sans-serif;
             margin-left: auto;
@@ -94,7 +94,7 @@
         }
 
         h3{
-            font-weight: 400;
+            font-weight: 500;
             font-size: 20px;
             max-width: 80%;
             margin-top: 10px;
@@ -185,7 +185,7 @@
             right: 0;
             top: 40px;
             width: 320px;
-            background-color: #EAE0D5;
+            background-color: #212121;
             z-index: 1000;
             height: 100vh;
             /* display: none; */
@@ -328,6 +328,7 @@
             margin-right: auto;
             max-width: 80%;
             border-radius: 2%;
+            width: 100vw;
         }
 
         #portfolio h3{
@@ -344,6 +345,7 @@
         #portfolio .row{
             display: flex;
             margin: auto;
+            max-width: 80%;
         }
         
         #portfolio .column{
@@ -403,15 +405,15 @@
         }
         
         #favorites .favorite-item table{
-            /* border-collapse: collapse; */
-            max-width: 90%;
+            max-width: 80%;
+            width: 60vw;
             margin: auto;
             border: 2px solid #03045E;
         }
 
         #favorites .favorite-item th{
             padding: 8px;
-            text-align: left;
+            text-align: center;
             font-weight: 800;
             background-color: #03045E;
             color: #EAE0D5;
@@ -419,7 +421,12 @@
 
         #favorites .favorite-item td{
             padding: 8px;
-            font-weight: 16px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        #favorites .favorite-item .fav-title{
+            font-weight: 600;
         }
 
         #favorites i{
