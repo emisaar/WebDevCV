@@ -422,6 +422,10 @@
             font-weight: 16px;
         }
 
+        #favorites i{
+            font-size: 1rem;
+        }
+
         #contact-info table{
             max-width: 80%;
             margin: auto;
